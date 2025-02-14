@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffb6c1, #f7c7e4);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: #e84a8b;
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e84a8b;
+    font-size: 1.8em;
+    font-family: 'Sacramento', cursive;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+button {
+    background-color: #e84a8b;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d25b89;
+    transform: scale(1.1);
+}
+
+#surprise-message {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #e84a8b;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    color: #f8a8d0;
+    animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.letter {
+    border: 2px dashed #e84a8b;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fbe8ef;
+    margin-top: 30px;
+}
